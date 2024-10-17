@@ -11,7 +11,8 @@ const CoustomNavbar = () => {
   const Links =[
     {name: "Home", path:"/"},
     {name: "Movie", path: "/movie"},
-    {name: "Family", path: "/family"}
+    {name: "Family", path: "/family"},
+    {name: "Career", path: '/career'}
   ]
 
     const [navtoggle,setNavtoggle] = useState(false)

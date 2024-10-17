@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroStyles.css";
+import Link from "next/link";
 
 const CoustomHero = () => {
   return (
@@ -18,8 +19,24 @@ const CoustomHero = () => {
           films. She first gained widespread recognition for her role as Malar
           in the 2015 Malayalam film Premam, which became a massive hit. Her
           natural acting style and lack of makeup in the movie stood out,
-          earning her critical and audience praise.{" "}
+          earning her critical and audience praise.
         </p>
+        <div className="flex flex-col mt-5 justify-center items-center">
+          <h2 className="mb-4 text-2xl font-bold">Social Media</h2>
+          <div className=" flex justify-around gap-5">
+            <Link href={"https://www.facebook.com/SaiPallavi.S"}>
+              <img className="contactlogo" src="./facebook.png" />
+            </Link>
+            <Link
+              href={"https://www.instagram.com/saipallavi.senthamarai/?hl=en"}
+            >
+              <img className="contactlogo " src="./insta.png" />
+            </Link>
+            <Link href={"https://x.com/SaipallaviFC"}>
+              <img className="contactlogo" src="./twiter.png" />
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

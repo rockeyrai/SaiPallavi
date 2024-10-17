@@ -49,10 +49,30 @@ display: flex;
   font-weight: 700;
 }
 
+.right-info h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .right-info p {
   font-size: 1.3rem;
   font-weight: 500;
   text-align: center;
+}
+
+.contactlogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  padding: 0px;
+  background-color: white;
+}
+
+.contactlogo:hover {
+  padding: 5px;
+  background-color: rgb(249, 107, 165);
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -63,6 +83,26 @@ display: flex;
     font-weight: 600;
   }
   
+  .contactlogo {
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    padding: 0px;
+    background-color: white;
+  }
+  
+  .contactlogo:hover {
+    padding: 3px;
+    background-color: rgb(249, 107, 165);
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+  .right-info h2 {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
   .right-info p {
     font-size: 14px;
     font-weight: 400;
