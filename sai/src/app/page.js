@@ -1,11 +1,9 @@
+import CoustomHero from "./components/hero/page";
 
 export default function Home() {
   return (
     <div>
-
-     <div>
-      home
-     </div>
+      <CoustomHero/>
     </div>
   );
 }

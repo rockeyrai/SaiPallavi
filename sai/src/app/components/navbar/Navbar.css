@@ -1,12 +1,14 @@
-.nabar{
+.nabar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(243, 138, 238);
-  height: 70px;
+  background-color: rgb(250, 132, 180);
+  height: 10vh;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 50px;
   z-index: 999;
+  position: fixed;
+  top: 0;
 }
 
 .navbarItem {
@@ -23,13 +25,13 @@
   position: absolute;
   top:16px ;
   right:20px ;
-  background-color: chartreuse;
+
   display: none;
   z-index: 10;
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
   .navbarItem {
     display: flex;
     flex-direction: column;
@@ -37,11 +39,16 @@
     position: absolute;
     top: 0;
     right:0;
-    background-color: coral;
+    background-color: rgb(247,58,132);
     height: 100vh;
-    width: 70%;
+    width: 65%;
     padding-top: 80px;
+    right: -600px;
   }
+  .navbarItem.active {
+    right: 0;
+  }
+
   .navToggle{
     display: initial;
   }
