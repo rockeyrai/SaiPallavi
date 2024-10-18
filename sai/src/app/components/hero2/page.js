@@ -59,9 +59,10 @@ const CoustomHero2 = () => {
           </div>
         </div>
         <div className="totalaward">
-
-        <Table>
-          <TableBody className="bg-blue-100">
+            <img className="rounded-t-xl h-[75%]" src="/saiaward.jpg" />
+            <div className="rounded-b border  bg-blue-50">
+            <Table >
+          <TableBody className="bg-blue-120">
             <TableRow>
               <TableCell colSpan={3} className="font-bold text-lg">
                 Totals
@@ -87,6 +88,7 @@ const CoustomHero2 = () => {
             </TableRow>
           </TableBody>
         </Table>
+        </div>
         </div>
 
       </div>
