@@ -1,0 +1,74 @@
+.hero2{
+  height: 90vh;
+  padding:50px 80px;
+}
+
+.awardtab{
+  width: 100%;
+  display: flex;
+}
+.rightaward{
+width: 50%;
+}
+
+.totalaward{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.awardtab h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 936px) {
+  .hero2{
+    height: 90vh;
+    padding:30px 50px;
+  }
+
+  .awardtab h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .awardtab{
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    gap: 40px;
+  }
+  .totalaward{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 0 0;
+    width: 40%;
+  }
+  .rightaward{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero2{
+    margin-top: 220px;
+    height: 100vh;
+    padding:10px 30px;
+  }
+
+  .awardtab h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .awardtab{
+    width: 100%;
+    height: 70vh;
+  }
+}
