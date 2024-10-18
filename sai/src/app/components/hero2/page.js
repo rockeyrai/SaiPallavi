@@ -61,7 +61,7 @@ const CoustomHero2 = () => {
           end: "bottom 99%",
           scrub: true,
           once: false, // Prevent repeat on scroll back
-          markers: true // Enable markers for debugging
+          markers: false // Enable markers for debugging
         },
       }
     );
@@ -85,6 +85,7 @@ const CoustomHero2 = () => {
       {
         y: 0,
         opacity: 1,
+        
         duration: 5,
         scrollTrigger: {
           trigger: element,

@@ -15,27 +15,19 @@ const CoustomHero = () => {
  // Call the function here
   }, []);
 
-
-   
-
+  
   const slideleft = () => {
-    gsap.from(".occupation p", {
-      x: 100,
-      duration: 3,
-      delay: 3,
-      yoyo: true,
-      repeat: -1, // Change yoyo to true instead of 1
-      stagger: -1,
-    });
-
-    gsap.to(".occupation p", {
-      x: 0,
-      duration: 3,
-      delay: 3,
-      yoyo: true,
-      repeat: -1,
-      stagger: -1,
-    });
+    gsap.fromTo(
+      ".occupation p",    // Target element
+      { x: 0 },          // Starting position
+      {
+        x: 70,             // Ending position
+        duration: 3,      // Duration of the animation
+        yoyo: true,       // Reverse the animation after it's done
+        repeat: -1,        // Repeat once, so it goes back and forth
+        stagger: 0.5,     // Delay between each staggered element
+      }
+    );
   };
 
   return (
@@ -46,21 +38,20 @@ const CoustomHero = () => {
         <p>"Malar" in Malayalam film 'Premam' (2015)</p>
         <div className="flex gap-2 text-xl occupation">
           <div className=" overflow-hidden">
-            <p>Actress </p>{" "}
+            <p>Actress </p>
           </div>
           |
           <div className=" overflow-hidden">
-            {" "}
-            <p>Doctor </p>{" "}
+
+            <p>Doctor </p>
           </div>
           |
           <div className=" overflow-hidden">
-            {" "}
-            <p>Dancer</p>{" "}
+            <p>Dancer</p>
           </div>
         </div>
       </div>
-      <div className="right-info">
+      <div className="right-info ">
         <h1>Short Bio</h1>
         <p>
           Sai Pallavi is an Indian actress and dancer known for her work in
@@ -70,7 +61,7 @@ const CoustomHero = () => {
           natural acting style and lack of makeup in the movie stood out,
           earning her critical and audience praise.
         </p>
-        <div className="flex flex-col mt-5 justify-center items-center">
+        <div className="flex flex-col mt-5 justify-center items-center  overflow-hidden">
           <h2 className="mb-4 text-2xl font-bold">Social Media</h2>
           <div className=" flex justify-around gap-5">
             <Link href={"https://www.facebook.com/SaiPallavi.S"}>
