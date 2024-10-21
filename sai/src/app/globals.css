@@ -12,10 +12,6 @@ body {
   }
 }
 
-body{
-  background-color: rgb(251,157,195);
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;

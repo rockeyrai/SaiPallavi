@@ -10,7 +10,7 @@ import { RxCross2 } from "react-icons/rx";
 const CoustomNavbar = () => {
   const Links =[
     {name: "Home", path:"/"},
-    {name: "Movie", path: "/movie"},
+    {name: "Movie", path: "/movies"},
     {name: "Family", path: "/family"},
     {name: "Career", path: '/career'}
   ]

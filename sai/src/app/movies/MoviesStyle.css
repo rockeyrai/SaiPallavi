@@ -1,0 +1,57 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(251,157,195);
+  margin: 0rem;
+  overflow: hidden;
+}
+
+.MoviePage{
+  display: flex;
+}
+
+.image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+  width: calc(100% + 200px); 
+
+}
+
+
+.image-track img {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+
+.movie-info{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  left: 50px;
+  top:120px;
+  text-align: center;
+}
+
+.movie-info-right{
+  height: 400px;
+  width: 500px;
+  position: absolute;
+  right: 50px;
+  top:150px;
+  text-align: center;
+  z-index: -1;
+}
+
+@media screen and(max-width:1000px) {
+.MoviePage{
+  flex-direction: column;
+}
+
+}
